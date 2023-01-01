@@ -49,16 +49,19 @@
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div class="rating__buttons" id="rating-buttons">
-        <button class="radius button rating__button">1</button>
-        <button class="radius button rating__button">2</button>
-        <button class="radius button rating__button">3</button>
-        <button class="radius button rating__button">4</button>
-        <button class="radius button rating__button">5</button>
-      </div>
-      <button class="rating__submit-button button" id="submit-button">
-        Submit
-      </button>
+
+      <form id="rating_form">
+        <div class="rating_form__inputs">
+          <label class="radius">1<input type="radio" name="rating" /></label>
+          <label class="radius">2<input type="radio" name="rating" /></label>
+          <label class="radius">3<input type="radio" name="rating" /></label>
+          <label class="radius">4<input type="radio" name="rating" /></label>
+          <label class="radius">5<input type="radio" name="rating" /></label>
+        </div>
+        <button class="rating__submit-button button" id="submit-button">
+          Submit
+        </button>
+      </form>
     </article>
 
     <!-- Rating state end -->

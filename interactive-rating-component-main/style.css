@@ -69,22 +69,30 @@ body {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
-/* buttons */
-.rating__buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-}
-.rating__button {
+
+/* FORM */
+#rating_form label {
   color: var(--color-medium-grey);
   font-size: var(--font-size-paragraph);
+  font-family: var(--font-main);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
 }
-.rating__button:hover {
+#rating_form label:hover {
   background-color: var(--color-orange);
   color: var(--color-white);
   cursor: pointer;
 }
-/* selected button */
+#rating_form input[type='radio'] {
+  display: none;
+}
+.rating_form__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+/* selected input */
 .selected {
   background-color: var(--color-light-grey);
   color: var(--color-white) !important;
