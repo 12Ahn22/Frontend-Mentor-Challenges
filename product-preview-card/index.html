@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/b85d37b2c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article class="product-card">
+      <!-- picture 사용해보기 -->
+      <picture class="product-card__image">
+        <source
+          srcset="./images/image-product-mobile.jpg"
+          media="(min-width:1440px)"
+        />
+        <img src="./images/image-product-desktop.jpg" alt="product image" />
+      </picture>
+      <div class="product-card__content">
+        <div class="product-type">PERFUME</div>
+        <h2 class="product-title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="product-price">
+          <span class="product-price__sale-price">$149.99</span>
+          <span class="product-price__origin-price">$169.99</span>
+        </div>
+        <button class="product-add-btn">
+          <i class="fa-solid fa-cart-plus"></i>Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
