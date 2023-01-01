@@ -58,7 +58,7 @@ body {
 .rating__title {
   color: var(--color-white);
   font-family: var(--font-main);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.6rem;
   margin-bottom: 1.25rem;
 }
@@ -146,10 +146,6 @@ body {
   .icon svg {
     width: 17px;
     height: 16px;
-  }
-
-  .rating__title {
-    font-size: 1.8rem;
   }
   .rating__content {
     margin-bottom: 1.875rem;
