@@ -1,32 +1,20 @@
 // DOM
 const rating = document.getElementById('rating');
 const ratingResult = document.getElementById('rating-result');
-const buttonContainer = document.getElementById('rating-buttons');
-const buttons = buttonContainer.querySelectorAll('button');
+const ratingForm = document.getElementById('rating_form');
 const submitButton = document.getElementById('submit-button');
 const score = document.getElementById('selected-score');
 
 let currentScore = 0;
 
-const clickScoreHandler = (event) => {
-  if (event.target.tagName === 'BUTTON') {
-    // 이전 클릭 버튼이 있다면, 해당 버튼 클래스 삭제
-    if (currentScore !== 0) {
-      buttons[currentScore - 1].classList.remove('selected');
-    }
-    currentScore = event.target.textContent;
-    buttons[currentScore - 1].classList.add('selected');
-    score.textContent = currentScore;
-  }
-};
-buttonContainer.addEventListener('click', clickScoreHandler);
-buttonContainer.addEventListener('keyup', (event) => {
-  if (event.key === 'ENTER') {
-    clickScoreHandler(event);
-  }
+ratingForm.addEventListener('change', (event) => {
+  currentScore = parseInt(event.target.value, 10);
+  score.textContent = currentScore;
 });
 
-const submitHandler = () => {
+const submitHandler = (event) => {
+  event.preventDefault();
+
   if (currentScore === 0) return;
 
   rating.classList.add('none');
