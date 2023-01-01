@@ -87,16 +87,16 @@ body {
 #rating_form input[type='radio'] {
   display: none;
 }
+#rating_form input:checked + label {
+  background-color: var(--color-light-grey);
+  color: var(--color-white) !important;
+}
 .rating_form__inputs {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
-/* selected input */
-.selected {
-  background-color: var(--color-light-grey);
-  color: var(--color-white) !important;
-}
+
 /* submit button */
 .rating__submit-button {
   width: 100%;
